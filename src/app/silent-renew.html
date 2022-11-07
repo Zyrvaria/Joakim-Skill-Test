@@ -1,0 +1,7 @@
+<!--This is taken entirely from https://developer.softrig.com/wiki/authentication/spa-application-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/oidc-client/1.6.1/oidc-client.js"></script>
+<script>
+  new Oidc.UserManager().signinSilentCallback().catch((err) => {
+    console.log(err);
+  });
+</script>
